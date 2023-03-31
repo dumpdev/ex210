@@ -1,0 +1,7 @@
+!/bin/bash
+cat > /etc/sysconfig/network-scripts/ifcfg-eth1 << eof
+DEVICE=eth1
+ONBOOT=yes
+BOOTPROTO=dhcp
+eof
+ifup eth1
